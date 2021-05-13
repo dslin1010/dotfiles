@@ -55,27 +55,11 @@ function no(){
 }
 
 function rv64(){
-#	export PATH=/NOBACKUP/sqa3/NFSTest/build-bsp510/build-toolchain/linux/nds64le-linux-glibc-v5d/bin/:$PATH
-#	export PATH=/home/users3/sqa/BSP-v510/linux/toolchains-bin/nds64le-linux-glibc-v5d/bin/:$PATH
-	export PATH=/NOBACKUP/sqa3/NFSTest/build-ast322/build-toolchain/linux/nds64le-linux-glibc-v5d/bin/:$PATH
-	#export PATH=/NOBACKUP/sqa3/NFSTest/build-ast322/build-toolchain/linux/nds64le-elf-mculib-v5d/bin:/$PATH
-#	export PATH=/local/tesheng/linux_devel_pack/eddie_kuo_toolchain/nds64le-linux-glibc-v5d/bin:/$PATH
-	export ARCH=riscv CROSS_COMPILE=riscv64-linux-
-	#export CFLAGS="-march=rv64v5 -mabi=lp64" LDFLAGS="-march=rv64v5 -mabi=lp64"
-	export CFLAGS="-march=rv64v5" LDFLAGS="-march=rv64v5"
-#	export CFLAGS="-march=rv64v5d" LDFLAGS="-march=rv64v5d -static"
-	#export CFLAGS="-march=rv64v5" LDFLAGS="-march=rv64v5"
+
 	#export ARCH=riscv CROSS_COMPILE=riscv64-unknown-linux-gnu-
 }
 
 function rv32(){
-#	export PATH=/local/tesheng/build-system-3/toolchain/nds32le-linux-glibc-v5d/bin:$PATH
-#	export PATH=/home/users/sqa/BSP-v510/linux/toolchains-bin/nds32le-linux-glibc-v5d/bin/:$PATH
-#	export PATH=/NOBACKUP/sqa3/NFSTest/build-ast322/build-toolchain/linux/nds32le-linux-glibc-v5d/bin/:$PATH
-	export PATH=/local/tesheng/build-system-3/toolchain/nds32le-linux-glibc-v5d/bin/:$PATH
-#	export PATH=/local/tesheng/build-system/build-system-3/toolchain/nds32le-linux-glibc-v5d/bin/:$PATH
-#	export PATH=/local/tesheng/benchmark/riscv32-linux-7.4-2.29-4.17/bin/:$PATH
-	export ARCH=riscv CROSS_COMPILE=riscv32-linux-
 	export CFLAGS="-march=rv32v5d" LDFLAGS="-march=rv32v5d" #ARCH_FLAGS="-march=rv32v5d"
 }
 
