@@ -25,7 +25,7 @@ alias so='source /home/tesheng/dotfiles/.bashrc.private'
 alias se='source /etc/environment'
 alias kq="ps auxf | grep tesheng | grep qemu | awk '{print \$2}' | xargs kill -9"
 
-source /home/tesheng/dotfiles/.git-prompt.sh
+source ~/.git-prompt.sh
 #function parse_git_branch { 
 #   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/' 
 #} 
